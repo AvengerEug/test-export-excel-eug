@@ -1,21 +1,12 @@
-# baoge
+# export-excel-eug 插件测试项目
 
-> A Vue.js project
+## 流程
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+1. npm install & npm run dev 运行项目
+2. 依次在控制台上输入:
+   let data = []
+   data.push({"用户编号": 1, "账号": "15574878845", "密码": "123456"})
+   data.push({"用户编号": 2, "账号": "15574878846", "密码": "123457"})
+   vue.data = data
+   vue.$refs.exportExcelEug.startExport()
+   即可完成excel的下载
